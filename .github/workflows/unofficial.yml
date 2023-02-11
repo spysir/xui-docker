@@ -63,18 +63,18 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Build and push with beta tag
-        uses: docker/build-push-action@v4
-        with:
-          context: build_image
-          file: ./build_image/Dockerfile.beta
-          platforms: linux/amd64,linux/arm64,linux/s390x
-          push: true
-          tags: |
-            ${{ steps.dockerhub_image.outputs.lowercase }}:beta
-            ghcr.io/${{ steps.ghcr_image.outputs.lowercase }}:beta
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+      #- name: Build and push with beta tag
+        #uses: docker/build-push-action@v4
+        #with:
+          #context: build_image
+          #file: ./build_image/Dockerfile.beta
+          #platforms: linux/amd64,linux/arm64,linux/s390x
+          #push: true
+          #tags: |
+            #${{ steps.dockerhub_image.outputs.lowercase }}:beta
+            #ghcr.io/${{ steps.ghcr_image.outputs.lowercase }}:beta
+          #cache-from: type=gha
+          #cache-to: type=gha,mode=max
      
       - name: Apprise-Gotify push
         uses: cstuder/apprise-ga@master
