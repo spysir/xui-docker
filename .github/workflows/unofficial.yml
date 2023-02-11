@@ -70,6 +70,8 @@ jobs:
         with:
             title: "镜像发布成功"
             message: |
+                yesir/xui-docker:alpha
+                ghcr.io/spysir/xui-docker:alpha
                 https://github.com/FranzKafkaYu/x-ui
                 https://github.com/spysir/xui-docker
         env:
