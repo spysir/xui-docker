@@ -36,7 +36,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.REPO_TOKEN }}
 
       - name: Lower case dockerhub image name
         id: dockerhub_image
@@ -67,7 +67,7 @@ jobs:
         with:
             title: "镜像发布成功"
             message: |
-                ${{matrix.target}} 镜像发布成功啦！
+                X-UI官方镜像发布成功啦！
                 https://github.com/spysir/xui-docker
         env:
             APPRISE_URL: ${{ secrets.APPRISE_URL }}
