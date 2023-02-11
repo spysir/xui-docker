@@ -67,7 +67,7 @@ jobs:
         with:
             title: "镜像发布成功"
             message: |
-                X-UI官方镜像发布成功啦！
+                https://github.com/vaxilu/x-ui
                 https://github.com/spysir/xui-docker
         env:
             APPRISE_URL: ${{ secrets.APPRISE_URL }}
