@@ -70,6 +70,6 @@ jobs:
                 yesir/xui-docker:latest
                 ghcr.io/spysir/xui-docker:latest
                 https://github.com/vaxilu/x-ui
-                https://github.com/spysir/xui-docker
+                
         env:
             APPRISE_URL: ${{ secrets.APPRISE_URL }}
