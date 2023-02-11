@@ -73,7 +73,7 @@ jobs:
                 yesir/xui-docker:alpha
                 ghcr.io/spysir/xui-docker:alpha
                 https://github.com/FranzKafkaYu/x-ui
-                https://github.com/spysir/xui-docker
+                
         env:
             APPRISE_URL: ${{ secrets.APPRISE_URL }}
       
