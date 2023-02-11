@@ -81,7 +81,7 @@ jobs:
         with:
             title: "固件编译成功"
             message: |
-                ${{matrix.target}} 镜像上传成功啦！
+                ${{matrix.target}} 镜像发布成功
                 https://github.com/spysir/xui-docker
         env:
             APPRISE_URL: ${{ secrets.APPRISE_URL }}
