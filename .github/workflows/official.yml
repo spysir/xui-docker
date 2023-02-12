@@ -67,9 +67,9 @@ jobs:
         with:
             title: "镜像发布成功"
             message: |
-                yesir/xui-docker:latest
-                ghcr.io/spysir/xui-docker:latest
-                https://github.com/vaxilu/x-ui
+                Docker: yesir/xui-docker:latest
+                Github: ghcr.io/spysir/xui-docker:latest
+                Source: github.com/vaxilu/x-ui
                 
         env:
             APPRISE_URL: ${{ secrets.APPRISE_URL }}
